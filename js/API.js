@@ -1,7 +1,7 @@
 const baseURL= 'http://localhost:3000';
 
 class API {
-    static getToys = (success,failure) => {
+    static fetchToys = (success,failure) => {
         fetch(`${baseURL}/toys`)
         .then (res=> res.json())
         .then (success)
