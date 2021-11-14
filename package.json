@@ -1,0 +1,19 @@
+{
+  "name": "gretaa-bandomasis2",
+  "version": "1.0.0",
+  "description": "CA dom atsiskaitymas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GretaAks/GretaA-bandomasis2.git"
+  },
+  "author": "Greta Aksamitauskaite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GretaAks/GretaA-bandomasis2/issues"
+  },
+  "homepage": "https://github.com/GretaAks/GretaA-bandomasis2#readme"
+}
