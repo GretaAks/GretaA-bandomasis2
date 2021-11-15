@@ -17,12 +17,20 @@ class ToyGridComponent {
     };
 
     showError = (err) => alert(err);
+
+    wrapColumn = (element) => {
+        const column = document.createElement('div');
+        column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
+        column.appendChild(element);
+        return column;
+      }
   
   
     init = () => {
       this.state.loading = true;
       this.fetchToys();
       this.htmlElement = document.createElement('div');
+      this.htmlElement.className = 'row g-4';
   
       this.render();
     }
@@ -36,7 +44,8 @@ class ToyGridComponent {
             this.htmlElement.innerHTML = '';
             const toyElement = toys
             .map (x => new ToyCardComponent(x))
-            .map (x => x.htmlElement);
+            .map (x => x.htmlElement)
+            .map (this.wrapColumn);
             this.htmlElement.append(...toyElement)
         }else
         this.htmlElement = `<h2>Šiuo metu žaislų neturime</h2>`;
