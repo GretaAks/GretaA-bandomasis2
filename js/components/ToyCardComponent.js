@@ -49,7 +49,7 @@ class ToyCardComponent {
 
 
     init = () => {
-        const {title,price,ageRestrictions,discount,imgSrc} = this.props;
+        const {title,price,ageRestrictions,discount,imgSrc,onDelete} = this.props;
         const {amount, currency} = price;
         
 
@@ -69,9 +69,13 @@ class ToyCardComponent {
         <div>
           <strong>${this.formatedAgeRestriction()}</strong>
           </div>
+          <div class="text-center pt-4">
+          <button class= "btn text-center btn-success">Ištrinti</button>
+          </div>
       
       `;
-        ;
+      const btn = this.htmlElement.querySelector('.btn');
+      btn.addEventListener('click', onDelete);
     }
 }
 

@@ -7,7 +7,19 @@ class ToyGridComponent {
       this.init();
     }
   
-    fetchToys = () => API.fetchToys(this.saveToys, alert);
+    fetchToys = () => API.fetchToys(
+        (toys) => {
+            this.state.loading = false;
+            this.saveToys(toys);
+        },
+        (err) => {
+            alert(err);
+            this.state.loading = false;
+            this.render();
+
+        }
+        
+    )
   
     saveToys = (toys) => {
         this.state.toys = toys;
@@ -23,6 +35,14 @@ class ToyGridComponent {
         column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
         column.appendChild(element);
         return column;
+      }
+
+      deleteToys = (id) => {
+        API.deleteToys(
+          id,
+          () => API.fetchToys(this.saveToys, alert),
+          alert
+        );
       }
   
   
@@ -43,14 +63,17 @@ class ToyGridComponent {
         }else if (toys.length > 0) {
             this.htmlElement.innerHTML = '';
             const toyElement = toys
-            .map (x => new ToyCardComponent(x))
+            .map(({ id, ...props }) => new ToyCardComponent({
+                ...props,
+                onDelete: () => this.deleteToys(id)
+              }))
             .map (x => x.htmlElement)
             .map (this.wrapColumn);
             this.htmlElement.append(...toyElement)
-        }else
+        }else {
         this.htmlElement = `<h2>Šiuo metu žaislų neturime</h2>`;
         }
     }
-  
+}
 
 

@@ -1,78 +1,78 @@
 {
-    "toys": [
+  "toys": [
+      {
+          "id": "1",
+          "title": "Lego",
+          "price": {
+            "currency": "€",
+            "amount": 29.99
+          },
+          "ageRestrictions": null,
+          "discount": {
+            "type": "percentage" ,
+            "amount": 10
+          },
+          "imgSrc": "https://www.lego.com/cdn/cs/set/assets/blta5f3e2a24976f32c/40377.jpg?fit=bounds&format=jpg&quality=80&width=800&height=800&dpr=1"
+        },
         {
-            "id": "1",
-            "title": "Lego",
-            "price": {
-              "currency": "€",
-              "amount": 29.99
-            },
-            "ageRestrictions": null,
-            "discount": {
-              "type": "percentage" ,
-              "amount": 10
-            },
-            "imgSrc": "https://www.lego.com/cdn/cs/set/assets/blta5f3e2a24976f32c/40377.jpg?fit=bounds&format=jpg&quality=80&width=800&height=800&dpr=1"
+          "id": "2",
+          "title": "Šautuvas",
+          "price": {
+            "currency": "$",
+            "amount": 18.99
           },
-          {
-            "id": "2",
-            "title": "Šautuvas",
-            "price": {
-              "currency": "$",
-              "amount": 18.99
-            },
-            "ageRestrictions": {
-              "from": 5
-            },
-            "discount": {
-              "type": "toFixed",
-              "amount": 16.99
-            },
-            "imgSrc": "https://www.u-buy.com.ua/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvYmQ3MWVmODQtY2RjNC00NjgzLWJkNjktZjEwYWE1YzY5ZGJhXzEuYmYzNmE4MmEyZWE4ZjBmMTRjMWJjZDk3OTY2ODEwODcuanBlZw.jpg"
+          "ageRestrictions": {
+            "from": 5
           },
-          {
-            "id": "3",
-            "title": "Kamuolys",
-            "price": {
-              "currency": "€",
-              "amount": 25.99
-            },
-            "ageRestrictions": null,
-            "discount": {
-              "type": "percentage",
-              "amount": 30
-            },
-            "imgSrc": "https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg"
+          "discount": {
+            "type": "toFixed",
+            "amount": 16.99
           },
-          {
-            "id": "4",
-            "title": "Žaislinė mašina",
-            "price": {
-              "currency": "€",
-              "amount": 65.99
-            },
-            "ageRestrictions": null,
-            "discount": {
-              "type": "amount",
-              "amount": 10
-            },
-            "imgSrc": "https://www.varle.lt/static/uploads/products/554/eco/ecotoys-audi-toy-car-pusher.jpg"
+          "imgSrc": "https://www.u-buy.com.ua/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvYmQ3MWVmODQtY2RjNC00NjgzLWJkNjktZjEwYWE1YzY5ZGJhXzEuYmYzNmE4MmEyZWE4ZjBmMTRjMWJjZDk3OTY2ODEwODcuanBlZw.jpg"
+        },
+        {
+          "id": "3",
+          "title": "Kamuolys",
+          "price": {
+            "currency": "€",
+            "amount": 25.99
           },
-          {
-            "id": "5",
-            "title": "Traukinukas",
-            "price": {
-              "currency": "€",
-              "amount": 20
+          "ageRestrictions": null,
+          "discount": {
+            "type": "percentage",
+            "amount": 30
+          },
+          "imgSrc": "https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg"
+        },
+        {
+          "id": "4",
+          "title": "Žaislinė mašina",
+          "price": {
+            "currency": "€",
+            "amount": 65.99
+          },
+          "ageRestrictions": null,
+          "discount": {
+            "type": "amount",
+            "amount": 10
+          },
+          "imgSrc": "https://www.varle.lt/static/uploads/products/554/eco/ecotoys-audi-toy-car-pusher.jpg"
+        },
+        {
+          "id": "5",
+          "title": "Traukinukas",
+          "price": {
+            "currency": "€",
+            "amount": 20
+          },
+          "ageRestrictions": {
+              "from": 3
             },
-            "ageRestrictions": {
-                "from": 3
-              },
-            "discount": {
-              "type": "amount",
-              "amount": 2
-            },
-            "imgSrc": "https://cdn.shopify.com/s/files/1/1470/9188/products/TW788B-1.png?v=1569516145"
-          }
-    ]
+          "discount": {
+            "type": "amount",
+            "amount": 2
+          },
+          "imgSrc": "https://cdn.shopify.com/s/files/1/1470/9188/products/TW788B-1.png?v=1569516145"
+        }
+  ]
 }
