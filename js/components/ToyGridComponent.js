@@ -71,7 +71,7 @@ class ToyGridComponent {
             .map (this.wrapColumn);
             this.htmlElement.append(...toyElement)
         }else {
-        this.htmlElement = `<h2>Šiuo metu žaislų neturime</h2>`;
+        this.htmlElement.innerHTML = `<h2>Šiuo metu žaislų neturime</h2>`;
         }
     }
 }
